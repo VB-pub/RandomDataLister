@@ -88,6 +88,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\RandomDataLister.exe.config" />
+    <None Include="bin\Release\RandomDataLister.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +105,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\RandomDataLister.exe" />
+    <Content Include="bin\Debug\RandomDataLister.pdb" />
+    <Content Include="bin\Release\RandomDataLister.exe" />
+    <Content Include="bin\Release\RandomDataLister.pdb" />
     <Content Include="Database\Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

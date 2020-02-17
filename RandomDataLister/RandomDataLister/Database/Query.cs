@@ -1,5 +1,7 @@
 ﻿using RandomDataLister.Model;
 using System.Data.SqlClient;
+using System.IO;
+using System.Reflection;
 
 namespace RandomDataLister.Database
 {
