@@ -1,11 +1,5 @@
 ﻿using RandomDataLister.Model;
-using System;
-using System.Collections.Generic;
-using System.Data.Linq;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RandomDataLister.Database
 {
@@ -15,8 +9,9 @@ namespace RandomDataLister.Database
 
         public void CreateConn()
         {
-            conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
-                                    AttachDbFilename=C:\Users\Vaidas\Desktop\DEV\RandomDataLister\RandomDataLister\RandomDataLister\Database\Database1.mdf;
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            conn.ConnectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
+                                    AttachDbFilename={path}\Database\Database1.mdf;
                                     Integrated Security=True;
                                     pooling=true";
             conn.Open();

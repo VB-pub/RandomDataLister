@@ -47,6 +47,7 @@
             this.listView1.Size = new System.Drawing.Size(934, 383);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // ThreadNo
             // 

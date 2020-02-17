@@ -66,7 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Query.cs" />
-    <Compile Include="DataGenerator\Consumer.cs" />
     <Compile Include="DataGenerator\Generator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
